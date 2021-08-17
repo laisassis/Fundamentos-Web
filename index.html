@@ -6,111 +6,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site feito na aula</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <nav>
+    <nav class="bgPrimary">
         <h3>Wildling</h3>
-        <a href="#">Lorem</a>
-        <a href="#">Lorem</a>
-        <a href="#">Lorem</a>
-        <a href="#">Lorem</a>
-        <img src="./imagens/user.png" alt="icone de Usuário">
-        <img src="./imagens/carrinho-de-compras-de-design-xadrez.png" alt="Icone de Carrinho">
+        <div>
+            <a href="#">Lorem</a>
+            <a href="#">Lorem</a>
+            <a href="#">Lorem</a>
+            <a href="#">Lorem</a>
+        </div>
+        <div>
+            <img src="./imagens/user.png" alt="icone de Usuário">
+            <img src="./imagens/carrinho-de-compras-de-design-xadrez.png" alt="Icone de Carrinho">  
+        </div>
     </nav>
 
-    <div>
+    <div class="bgPrimary imgFundo">
         <h1>Lorem Ipsum</h1>
-        <section>
+        <section class="detalhes">
+            <p>Lorem ipsum, dolor sit amet.</p>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est nesciunt,
                 voluptatum expedita at repellendus beatae aspernatur inventore excepturi
                 quod possimus quis quam natus placeat vel in debitis quaerat odio incidunt.
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est cupiditate
-                sint possimus cumque placeat minima. Architecto ipsum asperiores molestias
-                perspiciatis optio quas recusandae, fuga modi nam itaque iusto alias.</p>
-            <input type="text">
-            <button type="submit">Ver detalhes</button>
+            <input type="text" placeholder="Digite algo...">
+            <button type="submit">Ver Detalhes</button>
         </section>
     </div>
 
-    <section>
-        <h3>Lorem Ipsum</h3>
-        <img src="/imagens/kisspng-logo-generic-brand-clip-art-5ae5c54a897b40.7821574215250076905631.png"
-            alt="logo da marca" height="60px">
-        <img src="/imagens/kisspng-logo-generic-brand-clip-art-5ae5c54a897b40.7821574215250076905631.png"
-            alt="logo da marca" height="60px">
-        <img src="/imagens/kisspng-logo-generic-brand-clip-art-5ae5c54a897b40.7821574215250076905631.png"
-            alt="logo da marca" height="60px">
-        <img src="/imagens/kisspng-logo-generic-brand-clip-art-5ae5c54a897b40.7821574215250076905631.png"
-            alt="logo da marca" height="60px">
-        <img src="/imagens/kisspng-logo-generic-brand-clip-art-5ae5c54a897b40.7821574215250076905631.png"
-            alt="logo da marca" height="60px">
-        <img src="/imagens/kisspng-logo-generic-brand-clip-art-5ae5c54a897b40.7821574215250076905631.png"
-            alt="logo da marca" height="60px">
+    <section class="bgSecondary">
+        <h3 class="empresas">Lorem Ipsum</h3>
+        <div class="logos">
+            <img src="/imagens/logo-generico.png" alt="logo da marca" height="60px">
+            <img src="/imagens/logo-generico.png" alt="logo da marca" height="60px">
+            <img src="/imagens/logo-generico.png" alt="logo da marca" height="60px">
+            <img src="/imagens/logo-generico.png" alt="logo da marca" height="60px">
+            <img src="/imagens/logo-generico.png" alt="logo da marca" height="60px">
+            <img src="/imagens/logo-generico.png" alt="logo da marca" height="60px">
+        </div>
     </section>
 
-    <section>
-        <div>
+    <section class="produtos">
+        <div class="produtoUnico">
             <h2>Lorem Ipsum</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed ex, nobis minima praesentium
+                voluptate blanditiis placeat veniam consequuntur illum eaque alias laborum ducimus dolore quae cum nemo
+                repellat corporis!</p>
+            <button type="submit" id="comprar">Comprar Agora</button>
+            <div>
+                <img src="/imagens/produto-1.jpg" alt="produto 1" height="400px">
+            </div>
+        </div>
+
+        <div class="produtoUnico">
+            <div>
+                <img src="/imagens/produto-2.jpg" alt="produto 2" height="400px">
+            </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed ex, nobis minima praesentium
                 voluptate blanditiis placeat veniam consequuntur illum eaque alias laborum ducimus dolore quae cum nemo
                 repellat corporis!</p>
-            <button type="submit">Comprar Agora</button>
-            <div>
-                <img src="/imagens/1.jpg" alt="produto monitor" height="300px">
-            </div>
+            <button type="submit" id="detalhes">Ler mais</button>
         </div>
     </section>
 
-    <section>
-        <div>
-            <div>
-                <img src="/imagens/1.jpg" alt="produto monitor" height="300px">
-            </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed ex, nobis minima praesentium
-                voluptate blanditiis placeat veniam consequuntur illum eaque alias laborum ducimus dolore quae cum nemo
-                repellat corporis!</p>
-            <button type="submit">Ler mais</button>
-        </div>
-    </section>
-
-    <section>
-        <div>
+    <section class="produtos2"> 
+        <div class="produtoUnico2">
             <h2>produtos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque mollitia sit quasi. Veritatis atque
                 impedit saepe minus, ab quisquam quasi quia modi omnis! Accusantium explicabo maxime placeat ipsam rem!
             </p>
         </div>
 
-        <div>
+        <div class="produtoUnico2">
             <div>
-                <img src="/imagens/images.jpg" alt="Gabinete">
+                <img src="/imagens/produto-3.jpg" alt="Produto Rosa" height="400px">
                 <h3>Gabinete</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt autem, dolor est odio laudantium quia
                     voluptatum consequuntur vitae repudiandae officiis delectus amet atque libero, et sed alias cum,
                     quos expedita?</p>
                 <div>
-                    <button>Comprar Agora</button>
-                    <button>Adicionar ao carrinho</button>
+                    <button class ="comprarAgora">Comprar Agora</button>
+                    <button class="adicionar">Adicionar ao carrinho</button>
                 </div>
             </div>
             <div>
-                <img src="/imagens/images.jpg" alt="Gabinete">
+                <img src="/imagens/produto-4.jpg" alt="Produto Verde" height="400px">
                 <h3>Gabinete</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt autem, dolor est odio laudantium quia
                     voluptatum consequuntur vitae repudiandae officiis delectus amet atque libero, et sed alias cum,
                     quos expedita?</p>
                 <div>
-                    <button>Comprar Agora</button>
-                    <button>Adicionar ao carrinho</button>
+                    <button class ="comprarAgora">Comprar Agora</button>
+                    <button class="adicionar" >Adicionar ao carrinho</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="bgThyrd numeros">
         <div>
             <h3>500+</h3>
             <p>Lorem Ipsum</p>
@@ -124,9 +122,9 @@
             <p>Lorem Ipsum</p>
         </div>
     </section>
-
-    <footer>
-        <p>Copyright Wildling. Todos os direitos reservados</p>
+    <hr>
+    <footer id="direitos">
+        <p>Copyright Wildling - Todos os direitos reservados</p>
     </footer>
 
 
