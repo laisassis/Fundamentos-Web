@@ -9,20 +9,48 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="text-site" >
     <nav class="bgPrimary">
         <h3>Wildling</h3>
-        <div>
+        <div class="menu" >
             <a href="#">Lorem</a>
             <a href="#">Lorem</a>
             <a href="#">Lorem</a>
             <a href="#">Lorem</a>
         </div>
         <div>
-            <img src="./imagens/user.png" alt="icone de Usuário">
-            <img src="./imagens/carrinho-de-compras-de-design-xadrez.png" alt="Icone de Carrinho">  
+            <img src="./imagens/user.png" alt="icone de Usuário" id="myBtn">
+            <img src="./imagens/carrinho-de-compras-de-design-xadrez.png" alt="Icone de Carrinho" id="carrinhoCompras">  
         </div>
     </nav>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content" >
+            <span class="close">&times;</span>
+            <div class="input-modal" >
+                <h3>Wildling</h3>
+                <br>
+                <p>Cadastre-se para ter acesso a centena de produtos!</p>
+                <br>
+                <input type="text" placeholder="Digite o seu e-mail">
+                <input type="password" placeholder="Digite sua senha">
+                <button type="submit">Entrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="meuCarrinho" class="carrinho">
+        <div class="modal-content" >
+            <span class="closeC">&times;</span>
+            <div class="input-carrinho" >
+                <h3>Wildling</h3>
+                <br>
+                <p>Seu carrinho está vazio!</p>
+                <br>
+                <button type="submit">Adicionar produtos</button>
+            </div>
+        </div>
+    </div>
 
     <div class="bgPrimary imgFundo">
         <h1>Lorem Ipsum</h1>
@@ -33,7 +61,7 @@
                 voluptatum expedita at repellendus beatae aspernatur inventore excepturi
                 quod possimus quis quam natus placeat vel in debitis quaerat odio incidunt.
             </p>
-            <input type="text" placeholder="Digite algo...">
+            <input type="text" placeholder="Digite algo..." id="digiteAlgo" onkeyup="validaCampo()" >
             <button type="submit">Ver Detalhes</button>
         </section>
     </div>
@@ -74,33 +102,31 @@
         </div>
     </section>
 
-    <section class="produtos2"> 
-        <div class="produtoUnico2">
+    <section > 
+        <div class="produtos2">
             <h2>produtos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque mollitia sit quasi. Veritatis atque
-                impedit saepe minus, ab quisquam quasi quia modi omnis! Accusantium explicabo maxime placeat ipsam rem!
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque mollitia </p>
         </div>
 
-        <div class="produtoUnico2">
-            <div>
+        <div class="produtos">
+            <div class="produtoUnico" >
                 <img src="/imagens/produto-3.jpg" alt="Produto Rosa" height="400px">
-                <h3>Gabinete</h3>
+                <h3>express tonic</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt autem, dolor est odio laudantium quia
                     voluptatum consequuntur vitae repudiandae officiis delectus amet atque libero, et sed alias cum,
                     quos expedita?</p>
-                <div>
+                <div class="buttons" >
                     <button class ="comprarAgora">Comprar Agora</button>
                     <button class="adicionar">Adicionar ao carrinho</button>
                 </div>
             </div>
-            <div>
+            <div class="produtoUnico">
                 <img src="/imagens/produto-4.jpg" alt="Produto Verde" height="400px">
-                <h3>Gabinete</h3>
+                <h3>higher self oil</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt autem, dolor est odio laudantium quia
                     voluptatum consequuntur vitae repudiandae officiis delectus amet atque libero, et sed alias cum,
                     quos expedita?</p>
-                <div>
+                <div class="buttons">
                     <button class ="comprarAgora">Comprar Agora</button>
                     <button class="adicionar" >Adicionar ao carrinho</button>
                 </div>
@@ -109,15 +135,15 @@
     </section>
 
     <section class="bgThyrd numeros">
-        <div>
+        <div class="account">
             <h3>500+</h3>
             <p>Lorem Ipsum</p>
         </div>
-        <div>
+        <div class="account">
             <h3>500+</h3>
             <p>Lorem Ipsum</p>
         </div>
-        <div>
+        <div class="account">
             <h3>500+</h3>
             <p>Lorem Ipsum</p>
         </div>
@@ -127,7 +153,7 @@
         <p>Copyright Wildling - Todos os direitos reservados</p>
     </footer>
 
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

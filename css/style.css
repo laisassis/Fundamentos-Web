@@ -4,6 +4,27 @@
     padding: 0;
 }
 
+.text-site {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:#463232
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    
+}
+
+
 .bgPrimary{
     background: #F2D5C4;
     
@@ -17,18 +38,29 @@
     background: #FEF6F0;
 }
 
+
 nav{
     display: flex;
     align-items: center; /* alinha na vertical*/
     justify-content: space-between;  /* alinha na horizontal*/
     height: 60px;
     padding: 0 45px;  
+
 }
 
 nav h3 {
     font: 2rem;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+}
+
+#myBtn {
+    cursor: pointer;
+}
+
+#carrinhoCompras {
+    cursor: pointer;
+
 }
 
 h1 {
@@ -70,7 +102,7 @@ h1 {
     outline: none;
 }
 
-.detalhes button{
+.detalhes button {
     width: 40%;
     height: 30px;
     background: #463232;
@@ -83,98 +115,272 @@ h1 {
 
 .empresas {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     padding-top: 15px;
+    
 }
 
 .logos {
     display: flex;
     justify-content: space-evenly;
-    padding: 35px 0;
+    padding: 25px 0 50px;
 }
 
 .produtos {
     display: flex;
     justify-content: space-evenly;
-    height: 800px;
+    height: 100%;
+    margin-top: 40px;
 }
 
 .produtoUnico {
     font-family: 'Poppins', sans-serif;
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+.produtoUnico h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.produtoUnico p {
+    margin-bottom: 25px;
+}
+
 #comprar {
-    width: 30%;
-    height: 30px;
+    width: 40%;
+    height: 50px;
     background: #463232;
     font-family: 'Poppins', sans-serif;
     color: #FFF;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     border: none;
     outline: none;
 
 }
 
 #detalhes {
-    width: 20%;
-    height: 30px;
+    width: 30%;
+    height: 50px;
     background: #FFF;
     font-family: 'Poppins', sans-serif;
     color: #463232;
-    font-size: 0.9rem;
-    border: 2px solid #463232;
+    font-size: 1.2rem;
+    border: 1px solid #463232;
     outline: none;
 }
 
 .produtos2 {
+    text-align: center;
+    margin-top: 100px   
+}
+
+.produtos2 h2 {
+    font-size: 4rem;
     font-family: 'Poppins', sans-serif;
-    text-align: center;   
-
+    font-weight: 300;
 }
 
-.produtoUnicos2 {
-
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
 }
+
+.buttons {
+    display: flex;
+    height: 40px;
+}
+
+.comprarAgora,
+.adicionar {
+    margin-right: 20px;
+}
+
 
 .comprarAgora {
-    width: 15%;
-    height: 30px;
+    width: 30%;
+    height: 50px;
     background: #463232;
+    margin-bottom: 25px;
     font-family: 'Poppins', sans-serif;
     color: #FFF;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     border: none;
     outline: none;
+    
 }
 
 .adicionar {
-    width: 17%;
-    height: 30px;
+    width: 50%;
+    height: 50px;
     background: #FFF;
     font-family: 'Poppins', sans-serif;
     color: #463232;
-    font-size: 0.9rem;
-    border: 2px solid #463232;
+    font-size: 1.0rem;
+    border: 1px solid #463232;
     outline: none;
+}
+
+.account h3 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .numeros {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 50px;
     padding: 35px 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
+    
+
 }
 
 #direitos {
     font-family: 'Poppins', sans-serif;
     padding: 35px 35px;
     text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5)
+}
+
+.modal-content {
+    background-color: #F2D5C4;
+    margin: 10rem auto;
+    padding: 20px;
+    border: 1px solid #463232;
+    border-radius: 5px;
+    width: 35%;
+}
+
+.modal-content h3 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+
+.input-modal {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-modal button {
+    width: 30%;
+    height: 40px;
+    background-color: #463232;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.0rem;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.input-modal input {
+    width: 80%;
+    margin-top: 20px;
+    height: 2.0rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: 5px 20px;
+
+}
+
+.input-modal input:focus {
+    outline: none;
+}
+
+.close { 
+    color: #463232;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.carrinho {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5)
+}
+.input-carrinho {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-carrinho button {
+    width: 70%;
+    height: 40px;
+    background-color: #463232;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.0rem;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.input-carrinho input:focus {
+    outline: none;
+}
+
+.closeC { 
+    color: #463232;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+
+.closeC:hover,
+.closeC:focus {
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
 }
